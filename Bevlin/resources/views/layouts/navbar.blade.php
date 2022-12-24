@@ -20,8 +20,11 @@
         </div>
         <div class="col-auto">
             <div class="dropdown">
-                <button class="btn btn-outline-primary dropdown-toggle p-1 flex justify-center items-align-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="../images/{{App::getLocale()}}.svg" class="rounded-circle d-inline-block" style="height: 20px; width: 20px; object-fit: cover;" alt=""><span class="d-inline-block uppercase ml-1">{{App::getLocale()}}</span>
+                <button class="btn btn-outline-primary dropdown-toggle p-1 flex" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="d-inline-block">
+                        <img src="../images/{{App::getLocale()}}.svg" class="rounded-circle" style="height: 20px;  width: 20px; object-fit: cover;" alt="">
+                    </div>
+
                 </button>
 
                 <ul class="dropdown-menu py-0 rounded" aria-labelledby="dropdownMenuButton1">
