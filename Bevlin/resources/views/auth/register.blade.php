@@ -35,7 +35,7 @@
                 </div>
                 <div class="mt-3">
                     <label for="phone" class="form-label">{{__("Phone number")}}</label>
-                    <input type="number" class="form-control" id="phone" name="phone" >
+                    <input type="tel" class="form-control" id="phone" name="phone" pattern="[+]{1}[0-9]{12}">
                     @error("phone")
                     <span>{{$message}}</span>
                     @enderror
