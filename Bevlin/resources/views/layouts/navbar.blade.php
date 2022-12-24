@@ -20,8 +20,8 @@
         </div>
         <div class="col-auto">
             <div class="dropdown">
-                <button class="btn btn-outline-primary dropdown-toggle p-1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="uppercase ml-1">{{App::getLocale()}}</span>
+                <button class="btn btn-outline-primary dropdown-toggle p-1 d-block flex" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../images/{{App::getLocale()}}.svg" class="rounded-circle mr-1" style="height: 20px; width: 20px; object-fit: cover;" alt=""><span class="uppercase ml-1">{{App::getLocale()}}</span>
                 </button>
 
                 <ul class="dropdown-menu py-0 rounded" aria-labelledby="dropdownMenuButton1">
