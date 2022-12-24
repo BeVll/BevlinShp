@@ -25,7 +25,7 @@
         </a>
     </li>
 </ul>
-
+<hr class="my-0">
 <div class="d-grid gap-1 p-4">
     <form method="POST" class="d-grid gap-1" action="{{route("logout")}}">
         @csrf
