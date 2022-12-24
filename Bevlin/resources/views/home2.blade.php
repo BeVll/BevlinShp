@@ -15,7 +15,7 @@
 <body>
     @include('layouts.navbar')
 
-    <div class="bg-gray-100 min-h-screen flex justify-center" style="padding: 58px; height: 100%">
+    <div class="bg-gray-100 min-h-screen sm:max-w-100 py-6 flex justify-center" style="margin-top: 58px; height: 100%">
 
         @yield('page_content')
     </div>

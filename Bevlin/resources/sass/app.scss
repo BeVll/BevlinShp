@@ -215,8 +215,12 @@ $focus: $input-btn-focus-color;
 
 @media only screen and (min-width: 700px) and (max-width: 900px){
     #header{
-        padding: 7px 50px;
+        padding: 7px 0px;
+        .search_div{
+            padding: 0;
+        }
     }
+
 }
 @media only screen and (min-width: 900px) and (max-width: 1200px){
     #header{
