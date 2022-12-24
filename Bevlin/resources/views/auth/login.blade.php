@@ -3,7 +3,7 @@
 
 
 
-        <div class="w-100 sm:max-w-md m-auto  px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
+        <div class="w-100 sm:max-w-md m-auto   px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
             <!-- Session Status -->
             <div class="modal-header">
                 <h5 class="modal-title">{{__("Log in")}}</h5>

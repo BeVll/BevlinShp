@@ -3,8 +3,7 @@
 
 
 
-    <div class="pt-20">
-        <div class="lg:max-w-7xl sm:max-w-5xl mx-auto space-y-6 shadow  row mb-5 bg-white rounded">
+        <div class="lg:max-w-7xl sm:max-w-5xl w-100 mx-auto space-y-6 shadow  row my-5 bg-white rounded">
             <div class="col-3 px-0">
 
                 <div class="w-100">
@@ -33,5 +32,4 @@
             </div>
 
         </div>
-    </div>
 @endsection

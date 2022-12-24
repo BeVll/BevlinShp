@@ -1,4 +1,4 @@
-<ul class="list-group rounded-0 profile_menu">
+<ul class="list-group profile_menu">
 
     <li class="list-group-item @if(Route::currentRouteName() == "profile.edit"){{("active")}}@endif">
         <a href="/profile">
@@ -22,7 +22,8 @@
     <li class="list-group-item"></li>
 </ul>
 <div class="d-grid gap-1 p-4">
-    <form method="post" class="d-grid gap-1" action="{{route("logout")}}">
+    <form method="POST" class="d-grid gap-1" action="{{route("logout")}}">
+        @csrf
         <button type="submit" class="btn btn-outline-danger ">Logout</button>
     </form>
-</div >
+</div>

@@ -131,11 +131,12 @@ $focus: $input-btn-focus-color;
 }
 
 .profile_menu{
-
+    border-radius: 0.375rem 0 0 0;
     .list-group-item{
         padding: 0;
         font-size: 18px;
         transition: 0.3s;
+        border: 0;
 
         &:hover{
             background-color: $dark;
