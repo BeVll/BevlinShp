@@ -8,11 +8,11 @@
     <ul>
         @foreach($categories as $category)
             <li>
-                {{$category->icon}}
+                {!!$category->icon!!}
                 @if(App::getLocale() == "en")
-                    <span>{{$category->tittle_en}}</span>
+                    <span>{{$category->title_en}}</span>
                 @elseif(App::getLocale() == "ua")
-                    <span>{{$category->tittle_ua}}</span>
+                    <span>{{$category->title_ua}}</span>
                 @endif
             </li>
         @endforeach
