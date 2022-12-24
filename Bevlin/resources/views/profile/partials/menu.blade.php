@@ -16,11 +16,16 @@
             <span>{{__("My orders")}}</span>
         </a>
     </li>
-
-    <li class="list-group-item">A third item</li>
-    <li class="list-group-item">A fourth item</li>
-    <li class="list-group-item"></li>
+    <li class="list-group-item @if(Route::currentRouteName() == "profile.wishlist"){{("active")}}@endif">
+        <a href="/profile/wishlist">
+            <div class="li_icon">
+                <i class="bi bi-heart"></i>
+            </div>
+            <span>{{__("Wish list")}}</span>
+        </a>
+    </li>
 </ul>
+
 <div class="d-grid gap-1 p-4">
     <form method="POST" class="d-grid gap-1" action="{{route("logout")}}">
         @csrf
