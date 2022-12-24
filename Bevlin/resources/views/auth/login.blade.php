@@ -41,7 +41,7 @@
 
                 <div class="flex items-center justify-start mt-4">
                     <button type="submit" class="btn btn-primary text-dark font-weight-bold">{{__("Log in")}}</button>
-                    <a href="{{route("register")}}" class="btn btn-outline-secondary ml-3">
+                    <a href="{{route("register")}}" class="btn btn-outline-black ml-3">
                         {{ __('Sign up') }}
                     </a>
 
