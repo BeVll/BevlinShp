@@ -26,8 +26,8 @@
 
                 <ul class="dropdown-menu py-0 rounded" aria-labelledby="dropdownMenuButton1">
                         <li class="active dropdown-item">
-                            <a class="flex text-white text-decoration-none">
-                                <img src="../images/ua.png" class="rounded mr-1" width="15" height="17" alt=""><span style="font-size: 18px">{{__(App::getLocale())}}</span>
+                            <a class="flex text-white text-decoration-none p-0">
+                                <img src="https://xl-static.rozetka.com.ua/assets/icons/flag-ua.svg" class="rounded mr-1" style="width: 20px; height: 20px" alt=""><span style="font-size: 17px; margin-left: 3px; line-height: 20px">{{__(App::getLocale())}}</span>
                             </a>
                         </li>
                     @if(App::getLocale() != "en")
