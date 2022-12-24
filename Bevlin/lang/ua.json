@@ -7,7 +7,11 @@
     "Forgot your password?": "Забули пароль?",
     "Product search": "Пошук товарів",
     "Search": "Пошук",
-    "Name": "Ім'я",
+    "Name": "Назва",
     "Confirm Password": "Підтвердіть пароль",
-    "Register": "Зареєструватись"
+    "Register": "Зареєструватись",
+    "First name": "Ім'я",
+    "Last name": "Прізвище",
+    "Surname": "По-батькові",
+    "Already registered?": "Вже зареєстровані?"
 }
