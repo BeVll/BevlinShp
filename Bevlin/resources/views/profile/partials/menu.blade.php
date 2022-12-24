@@ -21,6 +21,8 @@
     <li class="list-group-item">A fourth item</li>
     <li class="list-group-item"></li>
 </ul>
-<div class="d-grid gap-2 p-4">
-    <a href="{{route("logout")}}" class="btn btn-outline-danger ">Logout</a>
+<div class="d-grid gap-1 p-4">
+    <form method="post" class="d-grid gap-1" action="{{route("logout")}}">
+        <button type="submit" class="btn btn-outline-danger ">Logout</button>
+    </form>
 </div >
