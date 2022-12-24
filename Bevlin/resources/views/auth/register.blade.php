@@ -13,57 +13,37 @@
                 @csrf
 
                 <div class="mt-4">
-                    <label for="first_name" class="form-label">{{__("Name")}}</label>
+                    <label for="first_name" class="form-label">{{__("First name")}}</label>
                     <input type="text" class="form-control" id="first_name" name="first_name">
                 </div>
                 <div class="mt-4">
-                    <label for="first_name" class="form-label">{{__("Name")}}</label>
-                    <input type="text" class="form-control" id="first_name" name="first_name">
+                    <label for="last_name" class="form-label">{{__("Last name")}}</label>
+                    <input type="text" class="form-control" id="last_name" name="last_name">
+                </div>
+                <div class="mt-4">
+                    <label for="surname" class="form-label">{{__("Surname")}}</label>
+                    <input type="text" class="form-control" id="surname" name="surname">
                 </div>
                 <div class="mt-4">
                     <label for="email" class="form-label">{{__("Email")}}</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
                 </div>
-
-
-                <!-- Email Address -->
                 <div class="mt-4">
-                    <x-input-label for="email" :value="__('Email')" />
-                    <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
-                    <x-input-error :messages="$errors->get('email')" class="mt-2" />
+                    <label for="password" class="form-label">{{__("Password")}}</label>
+                    <input type="password" class="form-control" id="password" name="password"">
                 </div>
 
-                <!-- Password -->
-                <div class="mt-4">
-                    <x-input-label for="password" :value="__('Password')" />
 
-                    <x-text-input id="password" class="block mt-1 w-full"
-                                    type="password"
-                                    name="password"
-                                    required autocomplete="new-password" />
-
-                    <x-input-error :messages="$errors->get('password')" class="mt-2" />
-                </div>
-
-                <!-- Confirm Password -->
-                <div class="mt-4">
-                    <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-
-                    <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                                    type="password"
-                                    name="password_confirmation" required />
-
-                    <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
-                </div>
 
                 <div class="flex items-center justify-end mt-4">
+                    <button type="submit" class="ml-4">
+                        {{ __('Register') }}
+                    </button>
                     <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
                         {{ __('Already registered?') }}
                     </a>
 
-                    <x-primary-button class="ml-4">
-                        {{ __('Register') }}
-                    </x-primary-button>
+
                 </div>
             </form>
     </div>
