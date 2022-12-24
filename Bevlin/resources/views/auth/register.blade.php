@@ -13,28 +13,46 @@
                 @csrf
 
                 <div class="mt-3">
-                    <label for="first_name" class="form-label">{{__("First name")}}</label>
-                    <input type="text" class="form-control" id="first_name" name="first_name">
+                    <label for="firstname" class="form-label">{{__("First name")}}</label>
+                    <input type="text" class="form-control" id="firstname" name="firstname">
+                    @error("firstname")
+                    <span>{{$message}}</span>
+                    @enderror
                 </div>
                 <div class="mt-3">
-                    <label for="last_name" class="form-label">{{__("Last name")}}</label>
-                    <input type="text" class="form-control" id="last_name" name="last_name">
+                    <label for="lastname" class="form-label">{{__("Last name")}}</label>
+                    <input type="text" class="form-control" id="lastname" name="lastname">
+                    @error("lastname")
+                    <span>{{$message}}</span>
+                    @enderror
                 </div>
                 <div class="mt-3">
                     <label for="surname" class="form-label">{{__("Surname")}}</label>
                     <input type="text" class="form-control" id="surname" name="surname">
+                    @error("surname")
+                    <span>{{$message}}</span>
+                    @enderror
                 </div>
                 <div class="mt-3">
-                    <label for="phone" class="form-label">{{__("Phone")}}</label>
-                    <input type="number" class="form-control" id="phone" name="phone" placeholder="name@example.com">
+                    <label for="phone" class="form-label">{{__("Phone number")}}</label>
+                    <input type="number" class="form-control" id="phone" name="phone" >
+                    @error("phone")
+                    <span>{{$message}}</span>
+                    @enderror
                 </div>
                 <div class="mt-3">
                     <label for="email" class="form-label">{{__("Email")}}</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                    @error("email")
+                    <span>{{$message}}</span>
+                    @enderror
                 </div>
                 <div class="mt-3">
                     <label for="password" class="form-label">{{__("Password")}}</label>
-                    <input type="password" class="form-control" id="password" name="password"">
+                    <input type="password" class="form-control" id="password" name="password">
+                    @error("password")
+                    <span>{{$message}}</span>
+                    @enderror
                 </div>
 
 
