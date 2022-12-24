@@ -6,9 +6,10 @@
     <div class="pt-20">
         <div class="lg:max-w-7xl sm:max-w-5xl mx-auto space-y-6 shadow  row mb-5 bg-white rounded">
             <div class="col-3 px-0">
+
                 <div class="w-100">
-                    <ul class="list-group rounded-0 p-1 profile_menu">
-                        <li class="list-group-item active" aria-current="true"><i class="bi bi-person-fill"></i>Profile</li>
+                    <ul class="list-group rounded-0 profile_menu">
+                        <li class="list-group-item active" aria-current="true"><i class="bi bi-person-circle"></i><span>{{Auth::user()->firstname}} {{Auth::user()->lastname}}</span></li>
                         <li class="list-group-item">A second item</li>
                         <li class="list-group-item">A third item</li>
                         <li class="list-group-item">A fourth item</li>

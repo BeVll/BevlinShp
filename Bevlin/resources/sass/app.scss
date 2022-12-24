@@ -129,6 +129,27 @@ $focus: $input-btn-focus-color;
         padding: 0px;
     }
 }
+
+.profile_menu{
+
+    .list-group-item{
+        padding: 5px 10px;
+        font-size: 25px;
+        transition: 0.3s;
+        &:hover{
+            background-color: $dark;
+            color: white;
+        }
+    }
+    i{
+        margin-right: 5px;
+        font-size: 25px;
+        height: 45px;
+    }
+    span{
+        font-weight: bold;
+    }
+}
 @media only screen and (max-width: 700px){
     #header{
         padding: 7px 0;
