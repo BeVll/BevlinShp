@@ -27,19 +27,20 @@
                 <ul class="dropdown-menu py-0 rounded" aria-labelledby="dropdownMenuButton1">
                         <li class="active dropdown-item">
                             <a class="flex text-white text-decoration-none p-0">
-                                <img src="https://xl-static.rozetka.com.ua/assets/icons/flag-ua.svg" class="rounded mr-1" style="width: 20px; height: 20px" alt=""><span style="font-size: 17px; margin-left: 3px; line-height: 20px">{{__(App::getLocale())}}</span>
+                                <img src="../images/{{App::getLocale()}}.svg" class="rounded-circle mr-1" style="height: 20px; width: 20px; object-fit: cover;" alt=""><span style="font-size: 17px; margin-left: 3px; line-height: 20px">{{__(App::getLocale())}}</span>
                             </a>
                         </li>
                     @if(App::getLocale() != "en")
                         <li class="dropdown-item">
                             <a class="flex text-decoration-none p-0" href="change-language/en">
-                                <img src="../images/uk.svg" class="rounded-circle mr-1" style="height: 20px; width: 20px; object-fit: cover;" alt=""><span style="font-size: 17px; margin-left: 3px; line-height: 20px">{{__("en")}}</span>
+                                <img src="../images/en.svg" class="rounded-circle mr-1" style="height: 20px; width: 20px; object-fit: cover;" alt=""><span style="font-size: 17px; margin-left: 3px; line-height: 20px">{{__("en")}}</span>
                             </a>
                         </li>
                     @endif
                     @if(App::getLocale() != "ua")
-                        <li class="dropdown-item"><a href="change-language/ua">
-                                <span>{{__("ua")}}</span>
+                        <li class="dropdown-item">
+                            <a class="flex text-decoration-none p-0" href="change-language/ua">
+                                <img src="../images/ua.svg" class="rounded-circle mr-1" style="height: 20px; width: 20px; object-fit: cover;" alt=""><span style="font-size: 17px; margin-left: 3px; line-height: 20px">{{__("ua")}}</span>
                             </a>
                         </li>
                     @endif
