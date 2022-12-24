@@ -20,10 +20,11 @@
         </div>
         <div class="col-auto">
             <div class="dropdown">
-                <button class="btn btn-outline-primary dropdown-toggle p-1 flex" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <div class="d-inline-block">
-                        <img src="../images/{{App::getLocale()}}.svg" class="rounded-circle" style="height: 20px;  width: 20px; object-fit: cover;" alt="">
-                    </div>
+                <button class="btn btn-outline-primary dropdown-toggle p-1 flex justify-center align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                        <img src="../images/{{App::getLocale()}}.svg" class="rounded-circle d-inline-block ml-1 align-top" style="height: 20px; margin-top: 2px; width: 20px; object-fit: cover;" alt="">
+
+
 
                 </button>
 
