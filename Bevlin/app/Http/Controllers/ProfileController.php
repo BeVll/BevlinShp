@@ -6,6 +6,9 @@ use App\Http\Requests\ProfileUpdateRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
+use PhpParser\Node\Scalar\String_;
+use Ramsey\Uuid\Type\Integer;
+use DB;
 
 class ProfileController extends Controller
 {
@@ -15,6 +18,12 @@ class ProfileController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\View\View
      */
+    public static function getla(int $id){
+        $client = DB::table('users')
+            ->where('id', '=', "1")
+            ->first();
+        return $client->firstname;
+    }
     public function edit(Request $request)
     {
         return view('profile.edit', [
