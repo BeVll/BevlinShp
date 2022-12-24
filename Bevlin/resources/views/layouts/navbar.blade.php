@@ -21,24 +21,28 @@
         <div class="col-auto">
             <div class="dropdown">
                 <button class="btn btn-outline-primary dropdown-toggle p-1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="uppercase">{{App::getLocale()}}</span>
+                    <span class="uppercase ml-1">{{App::getLocale()}}</span>
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 
-                    $dir    = '../resources/lang';
-                    $files2 = array_diff(scandir($dir), array('..', '.'));
-                    print_r($files2);
+                <ul class="dropdown-menu py-0 rounded" aria-labelledby="dropdownMenuButton1">
+                        <li class="active dropdown-item">
+                            <a class="flex text-white text-decoration-none">
+                                <img src="../images/ua.png" class="rounded mr-1" width="15" height="17" alt=""><span style="font-size: 18px">{{__(App::getLocale())}}</span>
+                            </a>
+                        </li>
                     @if(App::getLocale() != "en")
-                        <li><a class="dropdown-item" href="change-language/en">
-                                <span class="uppercase">en</span>
+                        <li class="dropdown-item">
+                            <a href="change-language/en">
+                                <span>{{__("en")}}</span>
                             </a>
                         </li>
                     @endif
                     @if(App::getLocale() != "ua")
-                        <li><a class="dropdown-item" href="change-language/ua">Українська</a></li>
+                        <li class="dropdown-item"><a href="change-language/ua">
+                                <span>{{__("ua")}}</span>
+                            </a>
+                        </li>
                     @endif
-                    <li><a class="dropdown-item" href="#"><i class="flag flag-ae"></i></a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
             </div>
 

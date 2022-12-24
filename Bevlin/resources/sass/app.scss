@@ -129,7 +129,19 @@ $focus: $input-btn-focus-color;
         padding: 0px;
     }
 }
+.dropdown-menu{
+    border-radius: $dropdown-border-radius;
 
+    li:first-child{
+        border-radius: $dropdown-border-radius $dropdown-border-radius 0 0;
+        a{
+            border-radius: $dropdown-border-radius $dropdown-border-radius 0 0;
+        }
+    }
+    li{
+        padding: 7px;
+    }
+}
 .profile_menu{
     border-radius: 0.375rem 0 0 0;
     .list-group-item{
