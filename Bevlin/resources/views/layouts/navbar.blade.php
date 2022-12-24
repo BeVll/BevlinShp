@@ -34,7 +34,7 @@
             </button>
         </div>
         <div class="col-auto">
-            <a class="btn btn-link" href="{{route('login')}}" >
+            <a class="btn btn-link" href="{{route('profile.edit')}}" >
                 <img width="34" height="34" src="../images/profile.png">
             </a>
         </div>
