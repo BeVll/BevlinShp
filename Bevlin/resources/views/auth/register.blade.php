@@ -12,23 +12,27 @@
             <form method="POST" action="{{ route('register') }}">
                 @csrf
 
-                <div class="mt-4">
+                <div class="mt-3">
                     <label for="first_name" class="form-label">{{__("First name")}}</label>
                     <input type="text" class="form-control" id="first_name" name="first_name">
                 </div>
-                <div class="mt-4">
+                <div class="mt-3">
                     <label for="last_name" class="form-label">{{__("Last name")}}</label>
                     <input type="text" class="form-control" id="last_name" name="last_name">
                 </div>
-                <div class="mt-4">
+                <div class="mt-3">
                     <label for="surname" class="form-label">{{__("Surname")}}</label>
                     <input type="text" class="form-control" id="surname" name="surname">
                 </div>
-                <div class="mt-4">
+                <div class="mt-3">
+                    <label for="phone" class="form-label">{{__("Phone")}}</label>
+                    <input type="number" class="form-control" id="phone" name="phone" placeholder="name@example.com">
+                </div>
+                <div class="mt-3">
                     <label for="email" class="form-label">{{__("Email")}}</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
                 </div>
-                <div class="mt-4">
+                <div class="mt-3">
                     <label for="password" class="form-label">{{__("Password")}}</label>
                     <input type="password" class="form-control" id="password" name="password"">
                 </div>
