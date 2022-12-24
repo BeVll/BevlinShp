@@ -12,15 +12,19 @@
             <form method="POST" action="{{ route('register') }}">
                 @csrf
 
-                <!-- Name -->
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">{{__("Email")}}</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <div class="mt-4">
+                    <label for="first_name" class="form-label">{{__("Name")}}</label>
+                    <input type="text" class="form-control" id="first_name" name="first_name">
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div class="mt-4">
+                    <label for="first_name" class="form-label">{{__("Name")}}</label>
+                    <input type="text" class="form-control" id="first_name" name="first_name">
                 </div>
+                <div class="mt-4">
+                    <label for="email" class="form-label">{{__("Email")}}</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                </div>
+
 
                 <!-- Email Address -->
                 <div class="mt-4">
