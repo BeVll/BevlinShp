@@ -32,8 +32,8 @@
                         </li>
                     @if(App::getLocale() != "en")
                         <li class="dropdown-item">
-                            <a href="change-language/en">
-                                <span>{{__("en")}}</span>
+                            <a class="flex text-decoration-none p-0" href="change-language/en">
+                                <img src="../images/uk.svg" class="rounded-circle mr-1" style="height: 20px; width: 20px; object-fit: cover;" alt=""><span style="font-size: 17px; margin-left: 3px; line-height: 20px">{{__("en")}}</span>
                             </a>
                         </li>
                     @endif
