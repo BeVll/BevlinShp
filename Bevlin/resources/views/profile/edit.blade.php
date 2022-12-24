@@ -9,7 +9,7 @@
 
                 <div class="w-100">
                     <ul class="list-group rounded-0 profile_menu">
-                        <li class="list-group-item active" aria-current="true"><i class="bi bi-person-circle"></i><span>{{Auth::user()->firstname}} {{Auth::user()->lastname}}</span></li>
+                        <li class="list-group-item active" aria-current="true"><div class="li_icon"><i class="bi bi-person-circle"></i></div><span>{{Auth::user()->firstname}} {{Auth::user()->lastname}}</span></li>
                         <li class="list-group-item">A second item</li>
                         <li class="list-group-item">A third item</li>
                         <li class="list-group-item">A fourth item</li>

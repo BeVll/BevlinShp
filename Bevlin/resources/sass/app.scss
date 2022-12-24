@@ -133,18 +133,24 @@ $focus: $input-btn-focus-color;
 .profile_menu{
 
     .list-group-item{
-        padding: 5px 10px;
-        font-size: 25px;
+        padding: 10px 15px;
+        font-size: 18px;
         transition: 0.3s;
         &:hover{
             background-color: $dark;
             color: white;
         }
+        display: flex;
+    }
+    .li_icon{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-direction: row;
     }
     i{
-        margin-right: 5px;
-        font-size: 25px;
-        height: 45px;
+        margin-right: 8px;
+        font-size: 22px;
     }
     span{
         font-weight: bold;
