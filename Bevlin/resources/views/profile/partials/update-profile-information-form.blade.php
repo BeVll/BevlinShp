@@ -48,7 +48,7 @@
         </div>
 
         <div class="flex items-center gap-4 mt-4">
-            <button class="btn btn-primary text-white  px-4">{{ __('Save') }}</button>
+            <button class="btn btn-primary border text-white px-4">{{ __('Save') }}</button>
 
             @if (session('status') === 'profile-updated')
                 <p

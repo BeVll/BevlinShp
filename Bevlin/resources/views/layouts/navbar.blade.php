@@ -19,13 +19,29 @@
             </div>
         </div>
         <div class="col-auto">
+            <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle p-1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="uppercase">{{App::getLocale()}}</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 
-                    <a class="ml-1 underline ml-2 mr-2" href="change-language/en">
-                        <span>en</span>
-                    </a>
-                    <a class="ml-1 underline ml-2 mr-2" href="change-language/ua">
-                        <span>ua</span>
-                    </a>
+                    $dir    = '../resources/lang';
+                    $files2 = array_diff(scandir($dir), array('..', '.'));
+                    print_r($files2);
+                    @if(App::getLocale() != "en")
+                        <li><a class="dropdown-item" href="change-language/en">
+                                <span class="uppercase">en</span>
+                            </a>
+                        </li>
+                    @endif
+                    @if(App::getLocale() != "ua")
+                        <li><a class="dropdown-item" href="change-language/ua">Українська</a></li>
+                    @endif
+                    <li><a class="dropdown-item" href="#"><i class="flag flag-ae"></i></a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
 
         </div>
         <div class="col-auto">
