@@ -1,4 +1,4 @@
-<nav id="header" class="navbar navbar-dark bg-secondary fixed-top">
+<nav id="header" class="navbar navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
         <div class="col-auto">
             <button class="category" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">

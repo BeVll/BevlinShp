@@ -43,6 +43,9 @@ class Handler extends ExceptionHandler
      */
     public function register()
     {
+        $this->renderable(function (NotFoundHttpException $e, $request) {
+            return redirect("/404");
+        });
         $this->reportable(function (Throwable $e) {
             //
         });
