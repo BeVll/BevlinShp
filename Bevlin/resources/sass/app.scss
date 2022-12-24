@@ -133,28 +133,42 @@ $focus: $input-btn-focus-color;
 .profile_menu{
 
     .list-group-item{
-        padding: 10px 15px;
+        padding: 0;
         font-size: 18px;
         transition: 0.3s;
+
         &:hover{
             background-color: $dark;
             color: white;
         }
-        display: flex;
+
+        a{
+            padding: 10px 15px;
+            text-decoration: none;
+            display: flex;
+            color: $list-group-color;
+            &:hover{
+                color: $list-group-active-color;
+            }
+        }
+
+        .li_icon{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            flex-direction: row;
+        }
+
+        i{
+            margin-right: 8px;
+            font-size: 22px;
+        }
+
+        span{
+            font-weight: bold;
+        }
     }
-    .li_icon{
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        flex-direction: row;
-    }
-    i{
-        margin-right: 8px;
-        font-size: 22px;
-    }
-    span{
-        font-weight: bold;
-    }
+
 }
 @media only screen and (max-width: 700px){
     #header{

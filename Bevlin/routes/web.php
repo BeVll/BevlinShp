@@ -22,6 +22,7 @@ Route::middleware('Localization')->group(function (){
     Route::get('/change-language/{lang}',"\App\Http\Controllers\LocalController@changeLang");
     Route::middleware('auth')->group(function () {
         Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+        Route::get('/profile/orders', [ProfileController::class, 'orders'])->name('profile.orders');
         Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
         Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     });
