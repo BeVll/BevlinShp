@@ -45,7 +45,7 @@ $focus: $input-btn-focus-color;
     font-family: SourceSansPro;
     src: url(../fonts/SourceSansPro.ttf);
 }
-
+//========================HEADER========================
 #header{
     .navbar-toggler-icon{
         background-image:   url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' width='32' height='32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(34,163,159, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 11h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm10 0h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zM4 21h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm13 0c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4z'/%3E%3C/svg%3E");
@@ -128,30 +128,26 @@ $focus: $input-btn-focus-color;
     .container-fluid{
         padding: 0px;
     }
+    .dropdown-menu{
+        border-radius: $dropdown-border-radius;
+
+        li:first-child{
+            border-radius: $dropdown-border-radius $dropdown-border-radius 0 0;
+            a{
+                border-radius: $dropdown-border-radius $dropdown-border-radius 0 0;
+            }
+        }
+        li{
+            padding: 7px;
+        }
+    }
 }
+
+//========================PROFILE========================
 .open_profile_menu_btn{
     border-radius: 15px 15px 0 0;
     box-shadow: 0 0 5px black;
-}
-.error_input{
-    font-size: 14px;
-    color: $red;
-    padding-top: 5px;
-    display: block;
-}
-
-.dropdown-menu{
-    border-radius: $dropdown-border-radius;
-
-    li:first-child{
-        border-radius: $dropdown-border-radius $dropdown-border-radius 0 0;
-        a{
-            border-radius: $dropdown-border-radius $dropdown-border-radius 0 0;
-        }
-    }
-    li{
-        padding: 7px;
-    }
+    display: none;
 }
 
 .profile_menu{
@@ -199,7 +195,17 @@ $focus: $input-btn-focus-color;
     }
 
 }
+//========================FOR ALL========================
+.error_input{
+    font-size: 14px;
+    color: $red;
+    padding-top: 5px;
+    display: block;
+}
+
+
 @media only screen and (max-width: 700px){
+    //========================HEADER========================
     #header{
         padding: 7px 0;
         .navbar-brand{
@@ -224,6 +230,7 @@ $focus: $input-btn-focus-color;
             padding: 0;
         }
     }
+    //========================PROFILE========================
     .profile_menu_div{
         display: none;
     }
@@ -237,23 +244,33 @@ $focus: $input-btn-focus-color;
         margin-bottom: 20px;
         padding-bottom: 30px;
     }
+    .open_profile_menu_btn{
+        display: inline-block;
+    }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 900px){
+    //========================HEADER========================
     #header{
         padding: 7px 0px;
         .search_div{
             padding: 0;
         }
     }
+    //========================PROFILE========================
     .profile_menu_div{
         display: none;
     }
     .profile_content_div{
         width: 100%;
+        min-height: 100%;
+    }
+    .open_profile_menu_btn{
+        display: inline-block;
     }
 }
 @media only screen and (min-width: 900px) and (max-width: 1200px){
+    //========================HEADER========================
     #header{
         padding: 7px 0;
         .search_div{
@@ -263,6 +280,7 @@ $focus: $input-btn-focus-color;
     }
 }
 @media only screen and (min-width: 900px) and (max-width: 1200px){
+    //========================HEADER========================
     #header{
         padding: 7px 0;
         .search_div{
