@@ -17,16 +17,33 @@
         @csrf
         @method('patch')
 
-        <div class="mt-4">
-            <x-input-label for="name" :value="__('Name')" />
-            <input id="name" name="name" type="text" class="form-control rounded mt-2" :value="old('name', $user->name)" required autofocus autocomplete="name" />
-            <x-input-error class="mt-2" :messages="$errors->get('name')" />
+        <div class="mt-3">
+            <label for="phone" class="form-label">{{__("First name")}}</label>
+            <input id="firstname" name="firstname" type="text" class="form-control rounded mt-2" value="{{$user->firstname}}" required autofocus autocomplete="firstname" />
+            @error("firstname")
+            <span class="error_input">{{$message}}</span>
+            @enderror
         </div>
-
-        <div class="mt-4">
-            <x-input-label for="email" :value="__('Email')" />
-            <input id="email" name="email" type="email" class="form-control rounded mt-2" :value="old('email', $user->email)" required autocomplete="email" />
-            <x-input-error class="mt-2" :messages="$errors->get('email')" />
+        <div class="mt-3">
+            <label for="phone" class="form-label">{{__("Last name")}}</label>
+            <input id="lastname" name="lastname" type="text" class="form-control rounded mt-2" value="{{$user->lastname}}" required autofocus autocomplete="lastname" />
+            @error("lastname")
+            <span class="error_input">{{$message}}</span>
+            @enderror
+        </div>
+        <div class="mt-3">
+            <label for="phone" class="form-label">{{__("Surname")}}</label>
+            <input id="surname" name="surname" type="text" class="form-control rounded mt-2" value="{{old('surname', $user->surname)}}" required autofocus autocomplete="surname" />
+            @error("surname")
+            <span class="error_input">{{$message}}</span>
+            @enderror
+        </div>
+        <div class="mt-3">
+            <label for="phone" class="form-label">{{__("Email")}}</label>
+            <input id="email" name="email" type="text" class="form-control rounded mt-2 text-gray" value="{{old('email', $user->email)}}" required autofocus autocomplete="email" />
+            @error("email")
+            <span class="error_input">{{$message}}</span>
+            @enderror
 
             @if ($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && ! $user->hasVerifiedEmail())
                 <div>

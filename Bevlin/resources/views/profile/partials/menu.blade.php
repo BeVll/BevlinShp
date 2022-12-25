@@ -29,6 +29,6 @@
 <div class="d-grid gap-1 p-4">
     <form method="POST" class="d-grid gap-1" action="{{route("logout")}}">
         @csrf
-        <button type="submit" class="btn btn-outline-danger ">Logout</button>
+        <button type="submit" class="btn btn-outline-danger ">{{__('Logout')}}</button>
     </form>
 </div>

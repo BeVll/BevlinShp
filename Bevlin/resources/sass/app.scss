@@ -129,6 +129,16 @@ $focus: $input-btn-focus-color;
         padding: 0px;
     }
 }
+.open_profile_menu_btn{
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 0 5px black;
+}
+.error_input{
+    font-size: 14px;
+    color: $red;
+    padding-top: 5px;
+    display: block;
+}
 
 .dropdown-menu{
     border-radius: $dropdown-border-radius;
@@ -143,6 +153,7 @@ $focus: $input-btn-focus-color;
         padding: 7px;
     }
 }
+
 .profile_menu{
     border-radius: 0.375rem 0 0 0;
     .list-group-item{
@@ -214,6 +225,15 @@ $focus: $input-btn-focus-color;
             padding: 0;
         }
     }
+    .profile_menu_div{
+        display: none;
+    }
+    .profile_content_div{
+        width: 100%;
+        .btn{
+            width: 100%;
+        }
+    }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 900px){
@@ -223,7 +243,12 @@ $focus: $input-btn-focus-color;
             padding: 0;
         }
     }
-
+    .profile_menu_div{
+        display: none;
+    }
+    .profile_content_div{
+        width: 100%;
+    }
 }
 @media only screen and (min-width: 900px) and (max-width: 1200px){
     #header{

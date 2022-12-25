@@ -3,7 +3,7 @@
 
 
 
-        <div class="lg:max-w-7xl sm:max-w-5xl w-100 mx-auto space-y-6 shadow  row my-5 bg-white rounded">
+    <div class="xl:max-w-7xl sm:max-w-full w-100 mx-auto shadow row  bg-white rounded">
             <div class="col-3 px-0">
 
                 <div class="w-100">
