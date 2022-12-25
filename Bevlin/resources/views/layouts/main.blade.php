@@ -3,7 +3,10 @@
 <div>
 
     <ul>
-
+        @php
+           $file = \Illuminate\Support\Facades\Storage::get('example.txt');
+           $file2 = \Illuminate\Support\Facades\Storage::download('example.txt');
+        @endphp
         @foreach(config('app.available_locales') as $lang)
             <li>
                 {{$lang}}
@@ -12,7 +15,7 @@
         @foreach($categories as $category)
 
             <li>
-                {!!$category->icon!!}
+                <img class="text-white" src="/storage/icons/categories_icons/{{$category->icon}}" height="50" width="50" alt="">
                 @if(in_array(App::getLocale(), config('app.available_locales')))
                     <span>{{ $category->{'title_'.App::getLocale()} }}</span>
                 @else
@@ -21,19 +24,12 @@
             </li>
         @endforeach
         @php
-            $image = Storage::disk('ftp')->get('home.png');
+//
 
-        // Put that image on local storage.
-            Storage::disk('local')->put('home.png', $image);
-
-            $url = Storage::url('home.png');
-
-            $directories = \Illuminate\Support\Facades\Storage::disk('ftp')->files("/");
-            echo($directories);
         @endphp
 
 
     </ul>
-    <img src="{{$url}}" alt="">
+
 </div>
 @endsection
