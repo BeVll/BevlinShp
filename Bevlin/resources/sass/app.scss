@@ -161,12 +161,11 @@ $focus: $input-btn-focus-color;
         font-size: 18px;
         transition: 0.3s;
         border: 0;
-
+        border-radius: 0;
         &:hover{
             background-color: $dark;
             color: white;
         }
-
         a{
             padding: 10px 15px;
             text-decoration: none;
@@ -233,6 +232,10 @@ $focus: $input-btn-focus-color;
         .btn{
             width: 100%;
         }
+    }
+    .main_content_block{
+        margin-bottom: 20px;
+        padding-bottom: 30px;
     }
 }
 
