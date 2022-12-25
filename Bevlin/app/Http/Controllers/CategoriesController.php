@@ -7,6 +7,6 @@ use DB;
 class CategoriesController extends Controller
 {
     public function getCategories(){
-        return DB::table('categories')->get();;
+
     }
 }

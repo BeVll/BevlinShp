@@ -16,11 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::middleware('Localization')->group(function (){
-    Route::get('/', function () {
-        return view('layouts.main');
-    });
+    Route::get('/', [\App\Http\Controllers\HomeController::class, 'start']);
     Route::get('/change-language/{lang}',"\App\Http\Controllers\LocalController@changeLang");
-    Route::resource('categories', [CategoriesController::class, 'getall']);
+
     Route::middleware('auth')->group(function () {
         Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
         Route::get('/profile/orders', [ProfileController::class, 'orders'])->name('profile.orders');

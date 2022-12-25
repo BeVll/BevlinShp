@@ -1,10 +1,7 @@
 @extends('../home2')
 @section('page_content')
 <div>
-    @php
-        $categories = \App\Http\Controllers\CategoriesController::getCategories();
 
-    @endphp
     <ul>
         @foreach($categories as $category)
             <li>

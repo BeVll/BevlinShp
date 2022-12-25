@@ -8,7 +8,8 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- CSS only -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<script src="https://kit.fontawesome.com/23062dce33.js" crossorigin="anonymous"></script>
+{{--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">--}}
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
 </head>
@@ -16,7 +17,7 @@
     @include('layouts.navbar')
 
     <div class="bg-gray-100 min-h-screen  px-sm-0 py-sm-0 py-xl-5 flex justify-center" style="margin-top: 58px; height: 100%">
-
+        <i class="fa-solid fa-house"></i>
         @yield('page_content')
     </div>
 
