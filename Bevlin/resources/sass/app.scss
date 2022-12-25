@@ -129,6 +129,7 @@ $focus: $input-btn-focus-color;
         padding: 0px;
     }
 }
+
 .dropdown-menu{
     border-radius: $dropdown-border-radius;
 
@@ -174,15 +175,17 @@ $focus: $input-btn-focus-color;
             flex-direction: row;
         }
 
-        i{
-            margin-right: 10px;
-            font-size: 22px;
+        &:hover .icon_profile_menu{
+            filter: brightness(0) invert(1);
         }
-
         span{
             font-weight: bold;
             padding-bottom: 1.5px;
         }
+    }
+    .icon_profile_menu{
+        filter: none;
+
     }
 
 }

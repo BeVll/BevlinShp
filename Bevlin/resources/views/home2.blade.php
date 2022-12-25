@@ -17,7 +17,6 @@
     @include('layouts.navbar')
 
     <div class="bg-gray-100 min-h-screen  px-sm-0 py-sm-0 py-xl-5 flex justify-center" style="margin-top: 58px; height: 100%">
-        <i class="fa-solid fa-house"></i>
         @yield('page_content')
     </div>
 

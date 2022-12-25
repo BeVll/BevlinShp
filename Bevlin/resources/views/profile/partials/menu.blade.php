@@ -3,25 +3,25 @@
     <li class="list-group-item @if(Route::currentRouteName() == "profile.edit"){{("active")}}@endif">
         <a href="/profile">
             <div class="li_icon">
-                <i class="bi bi-person-circle"></i>
+                <img class="icon_profile_menu" src="/storage/icons/profile_menu/profile2.png" height="30" width="30" alt="">
             </div>
-            <span>{{Auth::user()->firstname}} {{Auth::user()->lastname}}</span>
+            <span class="ml-2">{{Auth::user()->firstname}} {{Auth::user()->lastname}}</span>
         </a>
     </li>
     <li class="list-group-item @if(Route::currentRouteName() == "profile.orders"){{("active")}}@endif">
         <a href="/profile/orders">
             <div class="li_icon">
-                <i class="bi bi-card-checklist"></i>
+                <img class="icon_profile_menu" src="/storage/icons/profile_menu/orders2.png" height="30" width="30" alt="">
             </div>
-            <span>{{__("My orders")}}</span>
+            <span class="ml-2">{{__("My orders")}}</span>
         </a>
     </li>
     <li class="list-group-item @if(Route::currentRouteName() == "profile.wishlist"){{("active")}}@endif">
         <a href="/profile/wishlist">
             <div class="li_icon">
-                <i class="bi bi-heart"></i>
+                <img class="icon_profile_menu" src="/storage/icons/profile_menu/wishlist2.png" height="30" width="30" alt="">
             </div>
-            <span>{{__("Wish list")}}</span>
+            <span class="ml-2">{{__("Wish list")}}</span>
         </a>
     </li>
 </ul>
