@@ -1,11 +1,27 @@
 {
-  "resources/css/app.css": {
-    "file": "assets/app-f52d8432.css",
-    "src": "resources/css/app.css",
+  "resources/images/Search.png": {
+    "file": "assets/Search-e07c71a6.png",
+    "src": "resources/images/Search.png"
+  },
+  "resources/fonts/NUSAR.ttf": {
+    "file": "assets/NUSAR-955f7f5b.ttf",
+    "src": "resources/fonts/NUSAR.ttf"
+  },
+  "resources/fonts/radiate-sans-extrabold-semi-expanded.ttf": {
+    "file": "assets/radiate-sans-extrabold-semi-expanded-ee69e19a.ttf",
+    "src": "resources/fonts/radiate-sans-extrabold-semi-expanded.ttf"
+  },
+  "resources/fonts/SourceSansPro.ttf": {
+    "file": "assets/SourceSansPro-c263e461.ttf",
+    "src": "resources/fonts/SourceSansPro.ttf"
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-b099d061.css",
+    "src": "resources/sass/app.scss",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-619f552e.js",
+    "file": "assets/app-7c5313fb.js",
     "src": "resources/js/app.js",
     "isEntry": true
   }
