@@ -202,7 +202,13 @@ $focus: $input-btn-focus-color;
     padding-top: 5px;
     display: block;
 }
-
+.btn-close{
+    padding: 3px;
+    margin-right: 6px !important;
+    &:hover{
+        background-color: $black;
+    }
+}
 
 @media only screen and (max-width: 700px){
     //========================HEADER========================

@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use DB;
 class CategoriesController extends Controller
 {
-    public function getCategories(){
-
+    public static function getCategories(){
+        $categories = DB::table('categories')->get();
+        return $categories;
     }
 }

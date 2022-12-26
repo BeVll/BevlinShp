@@ -63,38 +63,35 @@
                 <img width="34" height="34" src="../images/profile.png">
             </a>
         </div>
+
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas-header bg-dark text-white">
+                <a href="/"><img class="logo_img" width="44" height="40" src="../images/logo.png" alt=""></a>
+
+                <h5 class="offcanvas-title" id="profileMenuLabel" style="font-family: NUSAR; font-size: 25px; padding-top: 7px">{{__('Categories')}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="color: red !important;" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+            <div class="offcanvas-body p-0">
+
+                @php
+                    $cat = \App\Http\Controllers\CategoriesController::getCategories();
+                    dd($cat);
+                @endphp
+
+
+{{--                @foreach($categories as $category)--}}
+
+{{--                    <li>--}}
+{{--                        <img class="text-white" src="/storage/icons/categories_icons/{{$category->icon}}" height="50" width="50" alt="">--}}
+{{--                        @if(in_array(App::getLocale(), config('app.available_locales')))--}}
+{{--                            <span>{{ $category->{'title_'.App::getLocale()} }}</span>--}}
+{{--                        @else--}}
+{{--                            <span>{{ $category->{'title_'.config('app.fallback_locale')} }}</span>--}}
+{{--                        @endif--}}
+{{--                    </li>--}}
+{{--                @endforeach--}}
             </div>
         </div>
     </div>
 </nav>
+

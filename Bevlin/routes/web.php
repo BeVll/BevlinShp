@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('Localization')->group(function (){
     Route::get('/', [\App\Http\Controllers\HomeController::class, 'start']);
+
     Route::get('/change-language/{lang}',"\App\Http\Controllers\LocalController@changeLang");
 
     Route::middleware('auth')->group(function () {

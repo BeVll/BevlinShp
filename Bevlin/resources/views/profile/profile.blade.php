@@ -22,7 +22,7 @@
     </div>
     <button class="btn btn-dark w-100 open_profile_menu_btn" data-bs-toggle="offcanvas" data-bs-target="#profileMenu" style="position: fixed; bottom: 0">
         <div class="flex justify-center align-items-center">
-            <img src="/storage/icons/profile_menu/wishlist2.png" class=" mr-2" height="20" width="20" alt="">
+            <img src="/storage/icons/buttons_icons/arrowup.png" class=" mr-2" height="20" width="20" alt="">
             <span class=" uppercase" style="">Open profile menu</span>
             <img src="/storage/icons/buttons_icons/arrowup.png" class="ml-2" height="20" width="20" alt="">
         </div>
