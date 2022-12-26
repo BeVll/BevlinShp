@@ -44,23 +44,21 @@
             <button id="btnShow" class="btn btn-primary border text-white px-4">{{ __('Save') }}</button>
 
             @if (session('status') === 'profile-updated')
-                <script>
 
-                </script>
-                <div class="toast-container position-fixed bottom-0 end-0 p-3">
-                    <div id="saveToast" data-bs-autohide="true" and data-bs-delay="1000" class="toast bg-green-600" role="alert" aria-live="assertive" aria-atomic="true">
-                        <div class="toast-header">
-                            <img src="..." class="rounded me-2" alt="...">
-                            <strong class="me-auto">Bootstrap</strong>
-                            <small>11 mins ago</small>
-                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                        </div>
-                        <div class="toast-body">
-                            Saved
-                        </div>
+            @endif
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="saveToast"  data-bs-autohide="true" data-bs-delay="1000" class="toast bg-green-600" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <img src="..." class="rounded me-2" alt="...">
+                        <strong class="me-auto">Bootstrap</strong>
+                        <small>11 mins ago</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Saved
                     </div>
                 </div>
-            @endif
+            </div>
         </div>
     </form>
 </section>

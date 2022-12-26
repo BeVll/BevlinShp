@@ -7,21 +7,21 @@
     "file": "assets/NUSAR-955f7f5b.ttf",
     "src": "resources/fonts/NUSAR.ttf"
   },
-  "resources/fonts/SourceSansPro.ttf": {
-    "file": "assets/SourceSansPro-c263e461.ttf",
-    "src": "resources/fonts/SourceSansPro.ttf"
-  },
   "resources/fonts/radiate-sans-extrabold-semi-expanded.ttf": {
     "file": "assets/radiate-sans-extrabold-semi-expanded-ee69e19a.ttf",
     "src": "resources/fonts/radiate-sans-extrabold-semi-expanded.ttf"
   },
+  "resources/fonts/SourceSansPro.ttf": {
+    "file": "assets/SourceSansPro-c263e461.ttf",
+    "src": "resources/fonts/SourceSansPro.ttf"
+  },
   "resources/sass/app.scss": {
-    "file": "assets/app-57ca67eb.css",
+    "file": "assets/app-ed800255.css",
     "src": "resources/sass/app.scss",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-7c5313fb.js",
+    "file": "assets/app-54a52cd6.js",
     "src": "resources/js/app.js",
     "isEntry": true
   }
