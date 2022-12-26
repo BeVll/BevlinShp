@@ -64,32 +64,35 @@
             </a>
         </div>
 
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-start m-0 w-100" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header bg-dark text-white">
                 <a href="/"><img class="logo_img" width="44" height="40" src="../images/logo.png" alt=""></a>
 
                 <h5 class="offcanvas-title" id="profileMenuLabel" style="font-family: NUSAR; font-size: 25px; padding-top: 7px">{{__('Categories')}}</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="color: red !important;" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body p-0">
+            <div class="offcanvas-body p-0 border-0">
+                <ul class="p-0">
+
 
                 @php
-                    $cat = \App\Http\Controllers\CategoriesController::getCategories();
-                    dd($cat);
+                    $categories = \App\Http\Controllers\CategoriesController::getCategories();
+
                 @endphp
 
 
-{{--                @foreach($categories as $category)--}}
+                @foreach($categories as $category)
 
-{{--                    <li>--}}
-{{--                        <img class="text-white" src="/storage/icons/categories_icons/{{$category->icon}}" height="50" width="50" alt="">--}}
-{{--                        @if(in_array(App::getLocale(), config('app.available_locales')))--}}
-{{--                            <span>{{ $category->{'title_'.App::getLocale()} }}</span>--}}
-{{--                        @else--}}
-{{--                            <span>{{ $category->{'title_'.config('app.fallback_locale')} }}</span>--}}
-{{--                        @endif--}}
-{{--                    </li>--}}
-{{--                @endforeach--}}
+                    <li class="flex justify-start p-2">
+                        <img class="text-white mr-2" src="/storage/icons/categories_icons/{{$category->icon}}" height="25" width="25" alt="">
+                        @if(in_array(App::getLocale(), config('app.available_locales')))
+                            <span>{{ $category->{'title_'.App::getLocale()} }}</span>
+                        @else
+                            <span>{{ $category->{'title_'.config('app.fallback_locale')} }}</span>
+                        @endif
+                    </li>
+                @endforeach
+                </ul>
             </div>
         </div>
     </div>
