@@ -64,8 +64,8 @@
             </a>
         </div>
 
-        <div class="offcanvas offcanvas-start m-0 w-100" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header bg-dark text-white">
+        <div class="offcanvas offcanvas-start m-0 w-100 border-0" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header bg-dark text-white p-2">
                 <a href="/"><img class="logo_img" width="44" height="40" src="../images/logo.png" alt=""></a>
 
                 <h5 class="offcanvas-title" id="profileMenuLabel" style="font-family: NUSAR; font-size: 25px; padding-top: 7px">{{__('Categories')}}</h5>

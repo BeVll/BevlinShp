@@ -3,7 +3,7 @@
 
 
 
-    <div class="w-100 sm:max-w-md m-auto bg-dark px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
+    <div class="w-100 sm:max-w-md m-auto px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
         <!-- Session Status -->
         <div class="modal-header">
             <h5 class="modal-title">{{__("Sign up")}}</h5>
@@ -23,13 +23,6 @@
                     <label for="lastname" class="form-label">{{__("Last name")}}</label>
                     <input type="text" class="form-control" id="lastname" name="lastname">
                     @error("lastname")
-                    <span>{{$message}}</span>
-                    @enderror
-                </div>
-                <div class="mt-3">
-                    <label for="surname" class="form-label">{{__("Surname")}}</label>
-                    <input type="text" class="form-control" id="surname" name="surname">
-                    @error("surname")
                     <span>{{$message}}</span>
                     @enderror
                 </div>

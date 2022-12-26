@@ -209,6 +209,11 @@ $focus: $input-btn-focus-color;
         background-color: $black;
     }
 }
+.bi-check-lg{
+    color: darkgreen;
+    font-size: 30px;
+    line-height: 30px;
+}
 
 @media only screen and (max-width: 700px){
     //========================HEADER========================

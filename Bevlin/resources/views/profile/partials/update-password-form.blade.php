@@ -35,13 +35,12 @@
             <button class="btn btn-primary text-white px-4">{{ __('Save') }}</button>
 
             @if (session('status') === 'password-updated')
-                <p
-                    x-data="{ show: true }"
-                    x-show="show"
-                    x-transition
-                    x-init="setTimeout(() => show = false, 2000)"
-                    class="text-sm text-gray-600"
-                >{{ __('Saved.') }}</p>
+                <i class="p-0 bi bi-check-lg"
+                   x-data="{ show: true }"
+                   x-show="show"
+                   x-transition
+                   x-init="setTimeout(() => show = false, 2000)"
+                ></i>
             @endif
         </div>
     </form>

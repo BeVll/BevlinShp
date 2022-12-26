@@ -33,7 +33,7 @@
         </div>
         <div class="mt-3">
             <label for="phone" class="form-label">{{__("Surname")}}</label>
-            <input id="surname" name="surname" type="text" class="form-control rounded mt-2" value="{{old('surname', $user->surname)}}" required autofocus autocomplete="surname" />
+            <input id="surname" name="surname" type="text" class="form-control rounded mt-2" value="{{old('surname', $user->surname)}}" autofocus autocomplete="surname" />
             @error("surname")
             <span class="error_input">{{$message}}</span>
             @enderror
@@ -41,16 +41,25 @@
 
 
         <div class="flex items-center gap-4 mt-4">
-            <button class="btn btn-primary border text-white px-4">{{ __('Save') }}</button>
+            <button id="btnShow" class="btn btn-primary border text-white px-4">{{ __('Save') }}</button>
 
             @if (session('status') === 'profile-updated')
-                <p
-                    x-data="{ show: true }"
-                    x-show="show"
-                    x-transition
-                    x-init="setTimeout(() => show = false, 2000)"
-                    class="text-sm text-gray-600"
-                >{{ __('Saved.') }}</p>
+                <script>
+
+                </script>
+                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="saveToast" data-bs-autohide="true" and data-bs-delay="1000" class="toast bg-green-600" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <img src="..." class="rounded me-2" alt="...">
+                            <strong class="me-auto">Bootstrap</strong>
+                            <small>11 mins ago</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                            Saved
+                        </div>
+                    </div>
+                </div>
             @endif
         </div>
     </form>
